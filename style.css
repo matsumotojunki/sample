@@ -1,0 +1,646 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  color: #6a6c75;
+}
+
+.inner {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/*--header ここから*/
+.header_logo {
+  text-align: center;
+}
+
+.header_logo img {
+  height: 50px;
+  width: auto;
+}
+
+.header_img {
+  background-color: white;
+  background-image: url(/img/header_img.jpeg);
+  height: 320px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header h2 {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/*--header ここまで*/
+/*--menuここから--*/
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.menu ul li {
+  list-style: none;
+  width: 40%;
+  background-color: #c2a79c;
+  color: #fff;
+  margin: 10px auto;
+  padding: 12px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
+          box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
+  font-size: 14px;
+}
+
+/*--menuここまで--*/
+/*--topここから--*/
+.top {
+  margin-top: 60px;
+}
+
+.top_img img {
+  width: 100%;
+}
+
+.top_text {
+  line-height: 2.0;
+}
+
+.top_text h3 {
+  padding: 5px 0;
+  position: relative;
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.top_text h3::before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px solid #c2a79c;
+}
+
+.top_text p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.top_text ul {
+  margin-bottom: 20px;
+}
+
+.top_text ul li {
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+/*--topここまで--*/
+/*--contentここから--*/
+.main_index {
+  text-align: center;
+}
+
+.main_index h4 {
+  padding: 15px 0;
+  position: relative;
+  margin: 20px auto;
+  font-weight: 300;
+  font-size: 22px;
+  border-bottom: 1px solid #000;
+  margin-top: 60px;
+}
+
+.main_index h4::before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px solid #c2a79c;
+}
+
+.content_v {
+  margin-bottom: 50px;
+}
+
+.content_v img {
+  width: 100%;
+}
+
+.content_v .index {
+  text-align: center;
+  background-color: #c2a79c;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.content_v p {
+  line-height: 2.0;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/*--contentここまで--*/
+/*--施術事例ここから--*/
+/*--施術事例ここまで--*/
+/*--お客様の声ここから--*/
+.voice {
+  margin-bottom: 50px;
+}
+
+.voice img {
+  width: 100%;
+}
+
+.voice_text {
+  background-color: #c2a79c;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 120px;
+  line-height: 2.0;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+/*--お客様の声ここまで--*/
+/*--施術方法ここから--*/
+.method p {
+  line-height: 2.0;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.method ul {
+  margin-bottom: 20px;
+}
+
+.method ul li {
+  margin-left: 30px;
+  line-height: 2.0;
+  font-size: 14px;
+}
+
+.method_main_text {
+  margin-bottom: 50px;
+}
+
+.method_main_text .index {
+  text-align: center;
+  background-color: #c2a79c;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.method_main_text .method_box {
+  position: relative;
+}
+
+.method_main_text .method_box img {
+  width: 100%;
+}
+
+.method_main_text .method_box_no {
+  position: absolute;
+  font-size: 20px;
+  background: #fff;
+  z-index: 999;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 50px;
+  border: 3.4px solid #c2a79c;
+  font-weight: 500;
+  bottom: 12px;
+  left: 0;
+}
+
+/*--施術方法ここまで--*/
+/*--menuここから--*/
+.menu_box {
+  margin-bottom: 40px;
+}
+
+.menu_box_img img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.menu_box_text .menu_list {
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: #696C75;
+  font-weight: 600;
+}
+
+.menu_box_text ul {
+  margin-bottom: 20px;
+}
+
+.menu_box_text ul li {
+  list-style: none;
+  margin-left: 10px;
+  line-height: 2.0;
+  font-size: 14px;
+}
+
+.menu_box_text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.sub_menu_box {
+  margin-bottom: 30px;
+}
+
+.sub_menu_box_index {
+  text-align: center;
+  border-bottom: solid 1px #000;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.sub_menu_box dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  line-height: 3.0;
+  font-size: 14px;
+}
+
+.sub_menu_box dt {
+  width: 70%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.sub_menu_box dd {
+  width: 30%;
+  text-align: right;
+  font-size: 14px;
+}
+
+/*--menuここまで--*/
+/*--予約ここから--*/
+.yoyaku_text {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.yoyaku_box {
+  margin-bottom: 30px;
+}
+
+.yoyaku_box p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.yoyaku_box .button {
+  text-align: center;
+  border: solid 1px #c2a79c;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+/*--予約ここまで--*/
+/*--accesここから--*/
+.acces img {
+  width: 100%;
+}
+
+.acces_box .address {
+  margin: 40px 0;
+}
+
+.acces_box .address dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.acces_box .address dl dt {
+  width: 30%;
+  padding: 10px 0;
+  border-right: solid 1px #000;
+}
+
+.acces_box .address dl dd {
+  width: 50%;
+  padding: 10px 0;
+  padding-left: 30px;
+}
+
+.acces_box .address_button {
+  text-align: center;
+  background-color: #c2a79c;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.acces_box .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*--accesここまで--*/
+/*--faqここから--*/
+/*アコーディオン全体*/
+.accordion-area {
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-area li {
+  margin: 5px 0;
+}
+
+.accordion-area section {
+  border: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.title {
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 3% 40px 3% 3%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+/*アイコンの＋と×*/
+.title::after {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  content: '\f107';
+  font-weight: 900;
+  font-size: 24px;
+  top: 10%;
+  right: 15px;
+}
+
+.title::before {
+  content: 'Q.';
+  margin-right: 15px;
+  font-size: 20px;
+  position: absolute;
+  left: -16px;
+  top: 12%;
+}
+
+/*　closeというクラスがついたら形状変化　*/
+.title.close::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f106';
+  font-weight: 900;
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;
+  /*はじめは非表示*/
+  background: #c2a79c;
+  color: #fff;
+  margin: 0 3% 3% 3%;
+  padding: 3%;
+  margin-top: 10px;
+  line-height: 2.0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.box p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.box p::before {
+  content: 'A.';
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  top: 5%;
+}
+
+/*--faqここまで--*/
+/*--footerここから--*/
+.footer {
+  background-color: #c2a79c;
+  width: 100vw;
+  font-size: 14px;
+  margin-top: 50px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer_box {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.footer_main p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_main dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.footer_main dl dt {
+  width: 30%;
+  padding: 10px 0;
+  border-right: solid 1px #fff;
+}
+
+.footer_main dl dd {
+  width: 60%;
+  padding: 10px 0;
+  padding-left: 30px;
+}
+
+.footer_menu ul {
+  margin-top: 40px;
+}
+
+.footer_menu ul li {
+  list-style: none;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.footer_menu ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f138';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/*--footerここまで--*/
+/*# sourceMappingURL=style.css.map */
