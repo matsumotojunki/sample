@@ -353,6 +353,21 @@ body {
   margin-bottom: 50px;
 }
 
+.method_main_text .method_1,
+.method_main_text .method_2,
+.method_main_text .method_3,
+.method_main_text .method_4,
+.method_main_text .method_5,
+.method_main_text .method_6 {
+  color: #000;
+  border: solid 1px #000;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-right: 5px;
+}
+
 .method_main_text .index {
   text-align: center;
   background-color: #c2a79c;
@@ -381,7 +396,7 @@ body {
   border-radius: 50px;
   border: 3.4px solid #c2a79c;
   font-weight: 500;
-  bottom: 12px;
+  top: 12px;
   left: 0;
 }
 
