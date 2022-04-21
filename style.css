@@ -102,7 +102,7 @@ input, select {
 }
 
 body {
-  color: #6a6c75;
+  color: #000;
 }
 
 .inner {
@@ -170,6 +170,47 @@ body {
   -webkit-box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
           box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
   font-size: 14px;
+}
+.menu ul .menu1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2bd";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.menu ul .menu2::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.menu ul .menu3::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f157";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.menu ul .menu4::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f4ad";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.menu ul .menu5::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f3c5";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.menu ul .menu6::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f274";
+  font-weight: 900;
+  margin-right: 5px;
 }
 
 /*--menuここまで--*/
