@@ -172,10 +172,14 @@ body {
   font-size: 14px;
 }
 .menu ul .menu1::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f2bd";
-  font-weight: 900;
-  margin-right: 5px;
+  content: "";
+  background-image: url(/img/top-menu_1.png);
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
 }
 
 .menu ul .menu2::before {
@@ -360,12 +364,9 @@ body {
 .method_main_text .method_5,
 .method_main_text .method_6 {
   color: #000;
-  border: solid 1px #000;
-  background-color: #fff;
   font-size: 18px;
-  border-radius: 50%;
-  padding: 5px 9px;
   margin-right: 5px;
+  color: #fff;
 }
 
 .method_main_text .index {
