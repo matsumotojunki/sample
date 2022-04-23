@@ -162,6 +162,8 @@ body {
 .menu ul li {
   list-style: none;
   width: 40%;
+  height: 17px;
+  line-height: 20px;
   background-color: #c2a79c;
   color: #fff;
   margin: 10px auto;
@@ -636,6 +638,53 @@ body {
 }
 
 /*--faqここまで--*/
+
+/*--予約固定蘭ここから--*/
+.under_fix {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(255, 255, 250, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.under_fix .reserve_box {
+  background-color: #c2a79c;
+  display: inline-block;
+  width: 85%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.under_fix .reserve_box::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f073";
+  font-weight: 200;
+  margin-right: 5px;
+}
+
+/*--予約固定蘭ここまで--*/
+
 /*--footerここから--*/
 .footer {
   background-color: #c2a79c;
