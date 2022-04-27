@@ -219,6 +219,18 @@ body {
   margin-right: 5px;
 }
 
+.menu ul .menu7 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu ul .menu7:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
 /*--menuここまで--*/
 /*--topここから--*/
 .top {
@@ -639,6 +651,36 @@ body {
 
 /*--faqここまで--*/
 
+/*---最後に。。。ここから*/
+.last_text {
+  margin: 40px 0;
+}
+
+.last_text h5 {
+  background-color: #c2a79c;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 170px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.last_text h5::first-letter {
+  color: #000;
+}
+
+.last_text p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/*---最後に。。。ここまで*/
+
 /*--予約固定蘭ここから--*/
 .under_fix {
   position: fixed;
@@ -750,4 +792,148 @@ body {
 }
 
 /*--footerここまで--*/
+
+.recruit-main .recruit_logo {
+  text-align: center;
+}
+
+.recruit-main .recruit_logo img {
+  width: auto;
+  height: 80px;
+  margin: 30px 0;
+}
+
+.recruit-main_text {
+  background-color: #c2a79c;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  height: auto;
+}
+
+.recruit-main_text P {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.recruit-main_subtext {
+  margin-top: 40px;
+}
+
+.recruit-main_subtext p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.recruit-sub .index {
+  text-align: center;
+  background-color: #c2a79c;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.recruit-sub_text {
+  margin-bottom: 40px;
+}
+
+.recruit-sub_text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.recruit-subsub img {
+  width: 100%;
+}
+
+.recruit-subsub p {
+  font-size: 14px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.recruit-recruit_text {
+  margin-bottom: 30px;
+}
+
+.recruit-recruit_text .index {
+  text-align: center;
+  background-color: #F8F8F8;
+  color: #000;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.recruit-recruit_text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.recruit-recruit_text ul li {
+  list-style: none;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.recruiting_list {
+  background-color: #c2a79c;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.recruiting_list li {
+  margin-left: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.recruiting p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.recruit_contact p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.recruit_contact .button {
+  text-align: center;
+  border: solid 3px #c2a79c;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.recruit_contact ul {
+  margin-bottom: 20px;
+}
+
+.recruit_contact ul li {
+  margin-left: 30px;
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */
