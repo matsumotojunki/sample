@@ -103,6 +103,9 @@ input, select {
 
 body {
   color: #000;
+  font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .inner {
@@ -122,7 +125,7 @@ body {
 
 .header_img {
   background-color: white;
-  background-image: url("https://github.com/matsumotojunki/sample/blob/main/header_img.jpeg?raw=true");
+  background-image: url(/img/header_img.jpeg);
   height: 320px;
   width: 100%;
   background-position: center;
@@ -148,6 +151,7 @@ body {
 /*--menuここから--*/
 .menu {
   text-align: center;
+  position: relative;
 }
 
 .menu ul {
@@ -156,7 +160,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 18px 0;
+  margin: 12px 0;
 }
 
 .menu ul li {
@@ -173,15 +177,12 @@ body {
           box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
   font-size: 14px;
 }
+
 .menu ul .menu1::before {
-  content: "";
-  background-image: url(https://github.com/matsumotojunki/sample/blob/main/top-menu_1.png?raw=true);
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f299";
+  font-weight: 800;
+  margin-right: 5px;
 }
 
 .menu ul .menu2::before {
@@ -217,6 +218,11 @@ body {
   content: "\f274";
   font-weight: 900;
   margin-right: 5px;
+}
+
+.menu ul .menu7 {
+  width: 90%;
+  margin-top: 20px;
 }
 
 .menu ul .menu7 a {
@@ -265,7 +271,7 @@ body {
 
 .top_text p {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .top_text ul {
@@ -274,7 +280,7 @@ body {
 
 .top_text ul li {
   margin-left: 30px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*--topここまで--*/
@@ -323,7 +329,7 @@ body {
 .content_v p {
   line-height: 2.0;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*--contentここまで--*/
@@ -343,10 +349,9 @@ body {
   color: #fff;
   margin: 10px 0;
   border-radius: 5px;
-  height: 120px;
   line-height: 2.0;
   padding: 10px 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*--お客様の声ここまで--*/
@@ -354,7 +359,7 @@ body {
 .method p {
   line-height: 2.0;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .method ul {
@@ -364,7 +369,7 @@ body {
 .method ul li {
   margin-left: 30px;
   line-height: 2.0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .method_main_text {
@@ -401,20 +406,6 @@ body {
   width: 100%;
 }
 
-.method_main_text .method_box_no {
-  position: absolute;
-  font-size: 20px;
-  background: #fff;
-  z-index: 999;
-  text-align: center;
-  padding: 10px 14px;
-  border-radius: 50px;
-  border: 3.4px solid #c2a79c;
-  font-weight: 500;
-  top: 12px;
-  left: 0;
-}
-
 /*--施術方法ここまで--*/
 /*--menuここから--*/
 .menu_box {
@@ -444,11 +435,11 @@ body {
   list-style: none;
   margin-left: 10px;
   line-height: 2.0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .menu_box_text p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -474,19 +465,19 @@ body {
           justify-content: space-between;
   padding: 0 15px;
   line-height: 3.0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .sub_menu_box dt {
   width: 70%;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .sub_menu_box dd {
   width: 30%;
   text-align: right;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*--menuここまで--*/
@@ -494,7 +485,7 @@ body {
 .yoyaku_text {
   margin-bottom: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .yoyaku_box {
@@ -503,7 +494,7 @@ body {
 
 .yoyaku_box p {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .yoyaku_box .button {
@@ -532,7 +523,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .acces_box .address dl dt {
@@ -555,7 +546,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .acces_box .map iframe {
@@ -586,7 +577,7 @@ body {
   position: relative;
   /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   padding: 3% 40px 3% 3%;
   -webkit-transition: all .5s ease;
@@ -637,7 +628,7 @@ body {
 }
 
 .box p {
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 20px;
 }
 
@@ -650,7 +641,6 @@ body {
 }
 
 /*--faqここまで--*/
-
 /*---最後に。。。ここから*/
 .last_text {
   margin: 40px 0;
@@ -680,7 +670,6 @@ body {
 }
 
 /*---最後に。。。ここまで*/
-
 /*--予約固定蘭ここから--*/
 .under_fix {
   position: fixed;
@@ -701,12 +690,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 25px 0;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.1rem;
 }
 
 .under_fix .reserve_box {
-  background-color: #c2a79c;
+  background-color: #21BA4F;
   display: inline-block;
   width: 85%;
   height: 40px;
@@ -714,7 +703,7 @@ body {
   margin: 0 auto;
   margin-top: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 5px;
 }
 
@@ -726,12 +715,11 @@ body {
 }
 
 /*--予約固定蘭ここまで--*/
-
 /*--footerここから--*/
 .footer {
   background-color: #c2a79c;
   width: 100vw;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 50px;
   color: #fff;
   padding: 20px 0;
@@ -756,7 +744,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer_main dl dt {
@@ -781,7 +769,7 @@ body {
   margin-bottom: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer_menu ul li::before {
@@ -792,6 +780,13 @@ body {
 }
 
 /*--footerここまで--*/
+.recruit-main .recruit_index {
+  font-size: 22px;
+  border-left: solid 5px #c2a79c;
+  border-right: solid 5px #c2a79c;
+  padding: 10px 20px;
+  text-align: center;
+}
 
 .recruit-main .recruit_logo {
   text-align: center;
@@ -824,7 +819,7 @@ body {
 
 .recruit-main_text P {
   margin: 10px 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -834,27 +829,57 @@ body {
 
 .recruit-main_subtext p {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
+}
+
+.recruit-sub {
+  background-color: #F1EAE0;
+  padding: 40px 0;
+}
+
+.recruit-sub .recruit_index {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.recruit-sub .recruit_index h4 {
+  font-weight: 400;
 }
 
 .recruit-sub .index {
   text-align: center;
-  background-color: #c2a79c;
-  color: #fff;
   margin: 10px 0;
   border-radius: 5px;
   height: 40px;
   line-height: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .recruit-sub_text {
+  width: 92%;
+  margin: 0 auto;
   margin-bottom: 40px;
+  border: solid 1px #F7F7F7;
+  background-color: #F7F7F7;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .recruit-sub_text p {
   margin-bottom: 20px;
   line-height: 1.5;
+  font-size: 16px;
+}
+
+.recruit-sub_text img {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .recruit-subsub img {
@@ -862,7 +887,7 @@ body {
 }
 
 .recruit-subsub p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 20px 0;
   line-height: 1.5;
 }
@@ -884,13 +909,13 @@ body {
 .recruit-recruit_text p {
   margin-bottom: 20px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .recruit-recruit_text ul li {
   list-style: none;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .recruiting_list {
@@ -904,11 +929,11 @@ body {
 .recruiting_list li {
   margin-left: 20px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .recruiting p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -935,5 +960,4 @@ body {
   margin-left: 30px;
   line-height: 1.5;
 }
-
 /*# sourceMappingURL=style.css.map */
