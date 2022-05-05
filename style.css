@@ -138,7 +138,7 @@ body {
 
 .mainvis .mainvis_img {
   background-color: white;
-  background-image: url("https://github.com/matsumotojunki/sample/blob/main/header_img.jpeg?raw=true");
+  background-image: url(https://github.com/matsumotojunki/sample/blob/main/header_img.jpeg?raw=true);
   height: 400px;
   width: 100%;
   background-position: center;
