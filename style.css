@@ -106,6 +106,7 @@ body {
   font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #696C75;
 }
 
 .inner {
@@ -114,19 +115,31 @@ body {
 }
 
 /*--header ここから*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
 .header_logo {
   text-align: center;
 }
 
 .header_logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
-.header_img {
+.mainvis {
+  margin-top: 70px;
+}
+
+.mainvis .mainvis_img {
   background-color: white;
-  background-image: url(https://github.com/matsumotojunki/sample/blob/main/header_img.jpeg?raw=true);
-  height: 320px;
+  background-image: url(/img/header_img.jpeg);
+  height: 400px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -134,7 +147,7 @@ body {
   position: relative;
 }
 
-.header h2 {
+.mainvis .mainvis_img h2 {
   position: absolute;
   bottom: 30px;
   right: 0;
@@ -149,12 +162,12 @@ body {
 
 /*--header ここまで*/
 /*--menuここから--*/
-.menu {
+.menu-top {
   text-align: center;
   position: relative;
 }
 
-.menu ul {
+.menu-top ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +176,7 @@ body {
   margin: 12px 0;
 }
 
-.menu ul li {
+.menu-top ul li {
   list-style: none;
   width: 40%;
   height: 17px;
@@ -178,65 +191,193 @@ body {
   font-size: 14px;
 }
 
-.menu ul .menu1::before {
-  font-family: "Font Awesome 5 Brands";
-  content: "\f299";
+.menu-top ul .menu1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2bd";
   font-weight: 800;
   margin-right: 5px;
 }
 
-.menu ul .menu2::before {
+.menu-top ul .menu2::before {
   font-family: "Font Awesome 5 Free";
   content: "\f005";
   font-weight: 900;
   margin-right: 5px;
 }
 
-.menu ul .menu3::before {
+.menu-top ul .menu3::before {
   font-family: "Font Awesome 5 Free";
   content: "\f157";
   font-weight: 900;
   margin-right: 5px;
 }
 
-.menu ul .menu4::before {
+.menu-top ul .menu4::before {
   font-family: "Font Awesome 5 Free";
   content: "\f4ad";
   font-weight: 900;
   margin-right: 5px;
 }
 
-.menu ul .menu5::before {
+.menu-top ul .menu5::before {
   font-family: "Font Awesome 5 Free";
   content: "\f3c5";
   font-weight: 900;
   margin-right: 5px;
 }
 
-.menu ul .menu6::before {
+.menu-top ul .menu6::before {
   font-family: "Font Awesome 5 Free";
   content: "\f274";
   font-weight: 900;
   margin-right: 5px;
 }
 
-.menu ul .menu7 {
+.menu-top ul .menu7 {
   width: 90%;
   margin-top: 20px;
 }
 
-.menu ul .menu7 a {
+.menu-top ul .menu7 a {
   color: #fff;
   text-decoration: none;
 }
 
-.menu ul .menu7:before {
+.menu-top ul .menu7:before {
   font-family: "Font Awesome 5 Free";
   content: "\f007";
   font-weight: 900;
   margin-right: 5px;
 }
 
+/*ハンバーガーメニューここから*/
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: #ECE0D8;
+  /*動き*/
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  left: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 60%;
+  height: 100vh;
+  /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 8%;
+}
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+#g-nav li a {
+  font-weight: 300;
+  color: #333;
+  text-decoration: none;
+  text-align: left;
+  padding: 20px;
+  display: block;
+  letter-spacing: 0.1em;
+  border-bottom: solid 1px #000;
+  font-size: 16px;
+}
+
+#g-nav li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f138';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn {
+  position: fixed;
+  z-index: 9999;
+  /*ボタンを最前面に*/
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+/*×に変化*/
+.openbtn span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/*ハンバーガーメニューここまで*/
 /*--menuここまで--*/
 /*--topここから--*/
 .top {
@@ -256,8 +397,10 @@ body {
   position: relative;
   margin: 20px 0;
   font-weight: 300;
-  font-size: 20px;
-  border-bottom: 1px solid #000;
+  font-size: 23px;
+  border-bottom: 2px solid #696C75;
+  text-align: center;
+  color: #000;
 }
 
 .top_text h3::before {
@@ -265,8 +408,8 @@ body {
   content: '';
   width: 30%;
   left: 0;
-  bottom: -1px;
-  border-bottom: 1px solid #c2a79c;
+  bottom: -2px;
+  border-bottom: 2px solid #c2a79c;
 }
 
 .top_text p {
@@ -294,9 +437,10 @@ body {
   position: relative;
   margin: 20px auto;
   font-weight: 300;
-  font-size: 22px;
-  border-bottom: 1px solid #000;
+  font-size: 23px;
+  border-bottom: 2px solid #696C75;
   margin-top: 60px;
+  color: #000;
 }
 
 .main_index h4::before {
@@ -304,12 +448,15 @@ body {
   content: '';
   width: 30%;
   left: 0;
-  bottom: -1px;
-  border-bottom: 1px solid #c2a79c;
+  bottom: -2px;
+  border-bottom: 2px solid #c2a79c;
 }
 
 .content_v {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  background-color: #F7F7F7;
+  padding: 1% 5%;
+  border-radius: 3px;
 }
 
 .content_v img {
@@ -318,12 +465,12 @@ body {
 
 .content_v .index {
   text-align: center;
-  background-color: #c2a79c;
-  color: #fff;
-  margin: 10px 0;
+  margin: 5px 0;
   border-radius: 5px;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .content_v p {
@@ -345,8 +492,7 @@ body {
 }
 
 .voice_text {
-  background-color: #c2a79c;
-  color: #fff;
+  background-color: rgba(190, 154, 120, 0.15);
   margin: 10px 0;
   border-radius: 5px;
   line-height: 2.0;
@@ -373,7 +519,10 @@ body {
 }
 
 .method_main_text {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  background-color: #F7F7F7;
+  padding: 1% 5%;
+  border-radius: 3px;
 }
 
 .method_main_text .method_1,
@@ -382,20 +531,18 @@ body {
 .method_main_text .method_4,
 .method_main_text .method_5,
 .method_main_text .method_6 {
-  color: #000;
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 5px;
-  color: #fff;
 }
 
 .method_main_text .index {
   text-align: center;
-  background-color: #c2a79c;
-  color: #fff;
-  margin: 10px 0;
+  margin: 5px 0;
   border-radius: 5px;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .method_main_text .method_box {
@@ -409,7 +556,10 @@ body {
 /*--施術方法ここまで--*/
 /*--menuここから--*/
 .menu_box {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: #F7F7F7;
+  padding: 5%;
+  border-radius: 3px;
 }
 
 .menu_box_img img {
@@ -425,6 +575,7 @@ body {
   padding-bottom: 5px;
   color: #696C75;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .menu_box_text ul {
@@ -441,6 +592,7 @@ body {
 .menu_box_text p {
   font-size: 16px;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .sub_menu_box {
@@ -455,6 +607,7 @@ body {
 }
 
 .sub_menu_box dl {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,21 +616,31 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15px;
   line-height: 3.0;
   font-size: 16px;
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
 }
 
 .sub_menu_box dt {
-  width: 70%;
-  text-align: left;
+  width: 65%;
+  text-align: center;
   font-size: 16px;
+  background-color: rgba(207, 180, 156, 0.4);
+  border-bottom: solid 1px #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sub_menu_box dd {
-  width: 30%;
-  text-align: right;
+  width: 35%;
+  text-align: center;
   font-size: 16px;
+  border-bottom: solid 1px #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: solid 1px #ccc;
 }
 
 /*--menuここまで--*/
@@ -486,6 +649,7 @@ body {
   margin-bottom: 40px;
   text-align: center;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .yoyaku_box {
@@ -540,12 +704,12 @@ body {
 
 .acces_box .address_button {
   text-align: center;
-  background-color: #c2a79c;
+  background-color: rgba(207, 180, 156, 0.4);
+  border: solid 1px #ccc;
   width: 60%;
   margin: 20px auto;
   padding: 10px;
   border-radius: 5px;
-  color: #fff;
   font-size: 16px;
 }
 
@@ -565,7 +729,7 @@ body {
 }
 
 .accordion-area li {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .accordion-area section {
@@ -580,8 +744,8 @@ body {
   font-size: 16px;
   font-weight: normal;
   padding: 3% 40px 3% 3%;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
   line-height: 1.5;
   margin-left: 20px;
 }
@@ -617,9 +781,8 @@ body {
 .box {
   display: none;
   /*はじめは非表示*/
-  background: #c2a79c;
-  color: #fff;
-  margin: 0 3% 3% 3%;
+  background: rgba(207, 180, 156, 0.2);
+  margin: 0 5% 3% 3%;
   padding: 3%;
   margin-top: 10px;
   line-height: 2.0;
@@ -642,26 +805,14 @@ body {
 
 /*--faqここまで--*/
 /*---最後に。。。ここから*/
-.last_text {
-  margin: 40px 0;
-}
-
 .last_text h5 {
-  background-color: #c2a79c;
   display: inline-block;
   width: 170px;
   height: 170px;
-  border-radius: 50%;
   text-align: center;
   line-height: 170px;
-  color: #fff;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.last_text h5::first-letter {
-  color: #000;
 }
 
 .last_text p {
@@ -695,7 +846,7 @@ body {
 }
 
 .under_fix .reserve_box {
-  background-color: #21BA4F;
+  background-color: #c2a79c;
   display: inline-block;
   width: 85%;
   height: 40px;
@@ -717,11 +868,10 @@ body {
 /*--予約固定蘭ここまで--*/
 /*--footerここから--*/
 .footer {
-  background-color: #c2a79c;
+  background-color: rgba(207, 180, 156, 0.4);
   width: 100vw;
   font-size: 16px;
   margin-top: 50px;
-  color: #fff;
   padding: 20px 0;
   margin-bottom: 100px;
 }
@@ -780,6 +930,117 @@ body {
 }
 
 /*--footerここまで--*/
+/*リンクの形状*/
+#page-top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c2a79c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#page-top a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f106";
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#page-top a:hover {
+  background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 70px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove {
+  -webkit-animation: UpAnime 0.8s forwards;
+          animation: UpAnime 0.8s forwards;
+}
+
+@-webkit-keyframes UpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+#page-top.DownMove {
+  -webkit-animation: DownAnime 0.8s forwards;
+          animation: DownAnime 0.8s forwards;
+}
+
+@-webkit-keyframes DownAnime {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
 .recruit-main .recruit_index {
   font-size: 22px;
   border-left: solid 5px #c2a79c;
@@ -834,7 +1095,6 @@ body {
 }
 
 .recruit-sub {
-  background-color: #F1EAE0;
   padding: 40px 0;
 }
 
@@ -856,7 +1116,7 @@ body {
   height: 40px;
   line-height: 40px;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 20px;
 }
 
@@ -864,7 +1124,6 @@ body {
   width: 92%;
   margin: 0 auto;
   margin-bottom: 40px;
-  border: solid 1px #F7F7F7;
   background-color: #F7F7F7;
   padding: 15px;
   -webkit-box-sizing: border-box;
