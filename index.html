@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://matsumotojunki.github.io/sample/style.css">
     <title>Document</title>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
 </head>
 <body>
     <!--ヘッダーここから-->
@@ -20,17 +24,17 @@
     <nav id="g-nav">
         <div id="g-nav-list">
             <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-            <ul>
-                <li><a href="#top">はじめての方へ</a></li>
-                <li><a href="#content">こだわり</a></li>
-                <li><a href="#menu">メニュー・料金</a></li>
-                <li><a href="#cust_voice">施術の流れ・口コミ</a></li>
-                <li><a href="#acces">アクセス</a></li>
-                <li><a href="#yoyaku">予約・お問い合わせ</a></li>
-                <li><a href="recruit.html">求人情報</a></li>
-                <li><a href="#">スタイル一覧</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
+           <ul>
+                    <li><a href="#top">はじめての方へ</a></li>
+                    <li><a href="#content">こだわり</a></li>
+                    <li><a href="#menu">メニュー・料金</a></li>
+                    <li><a href="#cust_voice">施術の流れ・口コミ</a></li>
+                    <li><a href="#acces">アクセス</a></li>
+                    <li><a href="#yoyaku">予約・お問い合わせ</a></li>
+                    <li><a href="recruit.html">求人情報</a></li>
+                    <li><a href="style-list.html">スタイル一覧</a></li>
+                    <li><a href="#blog">blog</a></li>
+                </ul>
         </div>
     </nav>
     <!--ハンバーガーメニューここまで-->
@@ -39,7 +43,7 @@
 
     <div class="mainvis" id="mainvis">
         <div class="mainvis_img">
-            <h2>あなたの理想のカラーに憧れのツヤを。</h2>
+            <h2>あなたの理想のカラーに憧れのツヤを</h2>
         </div>
     </div>
 
@@ -48,12 +52,12 @@
 
     <div class="menu-top">
         <ul>
-            <li class="menu1"><a href="#top">はじめての方へ</a></li>
+            <li class="menu1"><a href="#top">初めての方へ</a></li>
             <li class="menu2"><a href="#content">こだわり</a></li>
-            <li class="menu3"><a href="#menu">メニュー・料金</a></li>
-            <li class="menu4"><a href="#cust_voice">施術の流れ・口コミ</a></li>
+            <li class="menu3"><a href="#menu">メニュー/料金</a></li>
+            <li class="menu4"><a href="#cust_voice">事例/口コミ</a></li>
             <li class="menu5"><a href="#acces">アクセス</a></li>
-            <li class="menu6"><a href="#yoyaku">予約・お問い合わせ</a></li>
+            <li class="menu6"><a href="#yoyaku">予約/問合わせ</a></li>
         </ul>
     </div>
     <!--メニューここまで-->
@@ -62,7 +66,6 @@
     <div class="inner">
 
         <div class="top" id="top">
-
             <div class="top_text">
                 <h3>
                     理想の色にしながら艶髪へ
@@ -94,23 +97,28 @@
                 </p>
             </div>
             <div class="top_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/top_img.jpg?raw=true" alt="">
+                <img src="img/before-after.jpg" alt="">
             </div>
-            
+
             <div class="voice_button">
-                <a href="">スタイル一覧はこちら</a>
+                <a href="style-list.html">スタイル一覧はこちら</a>
+            </div>
+            <div class="voice_button">
+                <a href="voice.html">実際に来店されたお客様の声</a>
             </div>
         </div>
         <!--topここまで-->
+    </div>
 
-        <!--contentここから-->
-        <div class="content" id="content">
-            <div class="main_index">
+    <!--contentここから-->
+    <div class="content_inner" id="content">
+        <div class="content" >
+            <div class="main_index2">
                 <h4>wakuの5つのこだわり</h4>
             </div>
             <div class="content_v">
                 <div class="index">丁寧なカウンセリング</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_1.jpeg?raw=true" alt="">
+                <img src="img/content_1.jpeg" alt="">
                 <p>
                     お客様と理想のヘアデザインを共有し、
                     計画して叶えることを一番に考えています。
@@ -120,30 +128,30 @@
                     施術前から、お客様に安心していただけるよう丁寧にカウンセリングいたしております。
                 </p>
             </div>
-
+    
             <div class="content_v">
                 <div class="index">デザインカラーのこだわり</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_2.jpeg?raw=true" alt="">
+                <img src="img/content_2.jpeg" alt="">
                 <p>
                     ブリーチは1度やると切るまで残り続けます。
                     だからこそ、ブリーチでのベース作りに本気でこだわっています。
                     数ヶ月先まで考え、色落ちも計算して施術させていただきます。
                 </p>
             </div>
-
+    
             <div class="content_v">
                 <div class="index">マンツーマン施術</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_3.jpg?raw=true" alt="">
+                <img src="img/content_3.jpg" alt="">
                 <p>
                     お客様のお時間を大切に、カウンセリングから仕上げまで1人のスタイリストが専属担当いたします。
-
+    
                     アシスタントはおらず、施術者が変わることなどもありません。 お客様1人1人にしっかりと寄り添い、半個室で居心地の良い空間をご提供いたします。
                 </p>
             </div>
-
+    
             <div class="content_v">
                 <div class="index">ブリーチしてもツヤツヤな美髪へ</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_4.jpeg?raw=true" alt="">
+                <img src="img/content_4.jpeg" alt="">
                 <p>
                     ブリーチはどこでやるかでお客様の大切な髪の未来が変わります。
                     当店は極力髪を傷ませない薬剤を取り揃えています。
@@ -152,10 +160,10 @@
                     数百種類から厳選した、当店のトリートメントは必ず効果を実感していただけるものを取り扱っております。
                 </p>
             </div>
-
+    
             <div class="content_v">
                 <div class="index">安心の技術保証</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_5.jpg?raw=true" alt="">
+                <img src="img/content_5.jpg" alt="">
                 <p>
                     施術が終わったら終わりでなく、
                     アフターフォローまでしっかりさせていただいております。
@@ -163,28 +171,28 @@
                     1週間以内であれば無料でお直しさせていただきます。
                 </p>
             </div>
-
+    
             <div class="content_v">
                 <div class="index">完全予約制</div>
-                <img src="https://github.com/matsumotojunki/sample/blob/main/content_6.jpeg?raw=true" alt="">
+                <img src="img/content_6.jpeg" alt="">
                 <p>
                     ご来店していただくお客様1人1人にしっかりと向き合うため、ご来店人数の制限を設けております。
                     店内が騒がしくなることはなく、半個室であなただけの快適なお時間をお約束いたします。
                 </p>
             </div>
-
-
         </div>
+    </div>
+    
 
-        <!--contentここまで-->
-
+    <!--contentここまで-->
+    <div class="inner">
         <!--お客様の声ここから-->
         <div class="main_index" id="cust_voice">
             <h4>お客様の声</h4>
         </div>
         <div class="cust_voice">
             <div class="voice">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/voice_1.jpg?raw=true" alt="">
+                <img src="img/voice_1.jpg" alt="">
                 <div class="voice_text">
                     どうしてもやりたい色があり、お願いさせていただきました。
                     何回もブリーチしていて難しいのに希望通りの色になり、 ブリーチしてもサラサラになりました！
@@ -193,7 +201,7 @@
             </div>
 
             <div class="voice">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/voice_2.jpg?raw=true" alt="">
+                <img src="img/voice_2.jpg" alt="">
                 <div class="voice_text">
                     いつもかわいい髪にしてもらえて大満足です！！
                     今回のインナーカラーも理想以上でめちゃくちゃ気に入ってます♡
@@ -202,7 +210,7 @@
             </div>
 
             <div class="voice">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/voice_3.jpg?raw=true" alt="">
+                <img src="img/voice_3.jpg" alt="">
                 <div class="voice_text">
                     毎回キレイでかわいいカラーにしていただいてます♡
                     ブリーチをしてもサラツヤです＾＾
@@ -212,20 +220,19 @@
             </div>
 
             <div class="voice">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/voice_4.jpg?raw=true" alt="">
+                <img src="img/voice_4.jpg" alt="">
                 <div class="voice_text">
                     いつも期待以上の出来に、 本当にひかえめに言って最高です（＾＾）
                     情熱とこだわりのつまったwakuにこれからも 通いつめていきたいです！！
                     今後もよろしくお願いします！！
                 </div>
             </div>
+
             <div class="voice_button">
-                <a href="voice.html">その他の口コミはこちらから</a>
+                <a href="voice.html">実際に来店されたお客様の声</a>
             </div>
         </div>
         <!--お客様の声ここまで-->
-
-
 
         <!--施術方法ここから-->
         <div class="method" id="method">
@@ -247,7 +254,7 @@
                 <div class="method_main_text">
                     <div class="index"><span class="method_1">1.</span>Before</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_1.jpg?raw=true" alt="">
+                        <img src="img/ex_1.jpg" alt="">
                     </div>
 
                     <p>「施術前の解説」</p>
@@ -263,7 +270,7 @@
                 <div class="method_main_text">
                     <div class="index"><span class="method_2">2.</span>カウンセリング</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_2.jpg?raw=true" alt="">
+                        <img src="img/ex_2.jpg" alt="">
                     </div>
                     <p>15分程カウンセリングを丁寧にしてから、施術に入らせていただきます。</p>
                     <p>
@@ -273,9 +280,9 @@
                 </div>
 
                 <div class="method_main_text">
-                    <div class="index"><span class="method_3">3.</span>オーダーメイドハイライトカラー</div>
+                    <div class="index"><span class="method_3">3.</span>オリジナルハイライト</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_3.jpg?raw=true" alt="">
+                        <img src="img/ex_3.jpg" alt="">
                     </div>
                     <p>
                         ハイライトをミリ数、太さ、配置、薬剤など全て計算してデザインしていきます。
@@ -287,7 +294,7 @@
                 <div class="method_main_text">
                     <div class="index"><span class="method_4">4.</span>優しい薬剤でオンカラー</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_4.jpg?raw=true" alt="">
+                        <img src="img/ex_4.jpg" alt="">
                     </div>
                     <p>
                         ダメージを抑える厳選したカラー剤を使用し丁寧に塗布します。
@@ -298,7 +305,7 @@
                 <div class="method_main_text">
                     <div class="index"><span class="method_5">5.</span>似合わせカット</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_5.jpg?raw=true" alt="">
+                        <img src="img/ex_5.jpg" alt="">
                     </div>
                     <p>
                         色とのバランス、質感、再現性を考え1人1人に合うカットをいたします。
@@ -311,7 +318,7 @@
                 <div class="method_main_text">
                     <div class="index"><span class="method_6">6.</span>仕上がり</div>
                     <div class="method_box">
-                        <img src="https://github.com/matsumotojunki/sample/blob/main/ex_6.jpeg?raw=true" alt="">
+                        <img src="img/ex_6.jpeg" alt="">
                     </div>
                     <p>赤みゼロの色落ちも可愛いヘアデザインに。</p>
                     <ul>
@@ -325,22 +332,56 @@
                     <p>仕上げのコテ巻きもレクチャーいたします。</p>
                 </div>
             </div>
-
         </div>
         <!--施術方法ここまで-->
 
-        <!--menuここから-->
-        <div class="main_index" id="menu">
+        <!--blogここから-->
+        <div class="blog">
+            <div class="main_index" id="blog">
+                <h4>blog</h4>
+            </div>
+            <div class="blog_list">
+                <div class="blog_list_box">
+                    <img src="img/content_1.jpeg" alt="">
+                    <div class="blog_title">
+                        バレイヤージュ
+                    </div>
+                    <div class="read">
+                        記事を読む
+                    </div>
+                </div>
+                <div class="blog_list_box">
+                    <img src="img/content_1.jpeg" alt="">
+                    <div class="blog_title">
+                        バレイヤージュ
+                    </div>
+                    <div class="read">
+                        記事を読む
+                    </div>
+                </div>
+                <div class="readmore">
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div>
+        <!--blogここから-->
+
+    </div>
+
+    <!--menuここから-->
+    <div class="menu_inner">
+
+        <div class="main_index2" id="menu">
             <h4>メニュー・料金</h4>
         </div>
 
         <div class="menu_box">
             <div class="menu_box_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/menu_1.jpg?raw=true" alt="">
+                <img src="img/menu_1.jpg" alt="">
             </div>
             <div class="menu_box_text">
                 <div class="menu_list">
-                    ハイライト＋艶髪カラー<br> 
+                    ハイライト＋艶髪カラー<br>
                     ¥17,600
                 </div>
                 <ul>
@@ -367,7 +408,7 @@
 
         <div class="menu_box">
             <div class="menu_box_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/menu_2.jpeg?raw=true" alt="">
+                <img src="img/menu_2.jpeg" alt="">
             </div>
             <div class="menu_box_text">
                 <div class="menu_list">
@@ -396,7 +437,7 @@
 
         <div class="menu_box">
             <div class="menu_box_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/menu_3.jpg?raw=true" alt="">
+                <img src="img/menu_3.jpg" alt="">
             </div>
             <div class="menu_box_text">
                 <div class="menu_list">
@@ -429,7 +470,7 @@
 
         <div class="menu_box">
             <div class="menu_box_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/menu_4.jpg?raw=true" alt="">
+                <img src="img/menu_4.jpg" alt="">
             </div>
             <div class="menu_box_text">
                 <div class="menu_list">
@@ -459,7 +500,7 @@
 
         <div class="menu_box">
             <div class="menu_box_img">
-                <img src="https://github.com/matsumotojunki/sample/blob/main/menu_5.jpeg?raw=true" alt="">
+                <img src="img/menu_5.jpeg" alt="">
             </div>
             <div class="menu_box_text">
                 <div class="menu_list">
@@ -487,7 +528,9 @@
                 </ul>
             </div>
         </div>
+    </div>
 
+    <div class="inner">
         <div class="sub_menu">
             <div class="sub_menu_box">
                 <div class="sub_menu_box_index">カラー</div>
@@ -523,7 +566,6 @@
             </div>
         </div>
         <!--menuここまで-->
-
         <!--予約・お問い合わせここから-->
         <div class="main_index" id="yoyaku">
             <h4>ご予約・お問い合わせ</h4>
@@ -532,16 +574,14 @@
             <div class="yoyaku_text">ご予約は以下より承っております。ご予約前のご相談もお気軽にお問い合わせください。</div>
             <div class="yoyaku_box">
                 <p>お電話でご予約の方はこちら</p>
-                <div class="button">
-                    <div><i class="fas fa-phone fa-rotate-90"></i>0532436123</div>
+                <div class="button_tel">
+                    <a href="tel:0532436123">0532436123</a>
                 </div>
             </div>
             <div class="yoyaku_box">
                 <p>LINEからのご予約の方はこちら</p>
-                <div class="button">
-                    <div>
-                        <div class="fab fa-line"></div>LINE
-                    </div>
+                <div class="button_line">
+                    <a href="https://lin.ee/lOOBUMO">line</a>
                 </div>
             </div>
         </div>
@@ -563,13 +603,11 @@
                         <dt>営業時間</dt>
                         <dd>9:00〜19:00</dd>
                         <dt>TEL予約</dt>
-                        <dd>0532436123</dd>
+                        <dd><a href="tel:0532436123">0532-43-6123</a></dd>
                         <dt>LINE予約</dt>
-                        <dd>公式line</dd>
+                        <dd><a href="https://lin.ee/lOOBUMO">公式LINE</a></dd>
                     </dl>
-                    <div class="address_button">
-                        店鋪情報詳細へ
-                    </div>
+
                 </div>
                 <div class="map">
                     <iframe
@@ -724,7 +762,7 @@
     <div class="under_fix">
         <p>〜24時間受け付け対応〜</p>
         <div class="reserve_box">
-            ご予約・ご相談はこちら
+            <a href="https://lin.ee/lOOBUMO">ご予約・ご相談はこちら</a>
         </div>
     </div>
     <!--予約固定蘭ここまで-->
@@ -739,28 +777,28 @@
                 <p>waku</p>
                 <dl>
                     <dt>所在地</dt>
-                    <dd>〒440−0083愛知県豊橋市下地町字操穴26クレスト雅1F</dd>
+                    <dd>〒440−0083愛知県豊橋市下地町操穴26クレスト雅1F</dd>
                     <dt>定休日</dt>
                     <dd>不定休</dd>
                     <dt>営業時間</dt>
                     <dd>9:00〜19:00</dd>
                     <dt>TEL予約</dt>
-                    <dd>0532436123</dd>
+                    <dd><a href="tel:0532436123">0532-43-6123</a></dd>
                     <dt>LINE予約</dt>
-                    <dd>公式line</dd>
+                    <dd><a href="https://lin.ee/lOOBUMO">公式LINE</a></dd>
                 </dl>
             </div>
             <div class="footer_menu">
                 <ul>
-                    <li>はじめての方へ</li>
-                    <li>こだわり</li>
-                    <li>メニュー・料金</li>
-                    <li>施術事例</li>
-                    <li>店鋪情報</li>
-                    <li>よくあるご質問</li>
-                    <li>求人情報</li>
-                    <li>スタイル一覧</li>
-                    <li>blog</li>
+                    <li><a href="#top">はじめての方へ</a></li>
+                    <li><a href="#content">こだわり</a></li>
+                    <li><a href="#menu">メニュー・料金</a></li>
+                    <li><a href="#cust_voice">施術の流れ・口コミ</a></li>
+                    <li><a href="#acces">アクセス</a></li>
+                    <li><a href="#yoyaku">予約・お問い合わせ</a></li>
+                    <li><a href="recruit.html">求人情報</a></li>
+                    <li><a href="style-list.html">スタイル一覧</a></li>
+                    <li><a href="#blog">blog</a></li>
                 </ul>
             </div>
         </div>
