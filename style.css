@@ -109,9 +109,50 @@ body {
   color: #696C75;
 }
 
+/*--コンテンツ内の幅--*/
 .inner {
   width: 92%;
   margin: 0 auto;
+}
+
+/*--見出し--*/
+.main_index {
+  text-align: center;
+}
+
+.main_index h4 {
+  padding: 15px 0;
+  position: relative;
+  margin: 30px auto;
+  font-weight: 300;
+  font-size: 23px;
+  border-bottom: 2px solid #696C75;
+  color: #000;
+}
+
+.main_index h4::before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  left: 0;
+  bottom: -2px;
+  border-bottom: 2px solid #c2a79c;
+}
+
+.main_index2 {
+  text-align: center;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.main_index2 h4 {
+  padding: 15px 0;
+  position: relative;
+  margin: 30px auto;
+  font-weight: 300;
+  font-size: 23px;
+  color: #000;
+  border-bottom: solid 1px #000;
 }
 
 /*--header ここから*/
@@ -138,10 +179,10 @@ body {
 
 .mainvis .mainvis_img {
   background-color: white;
-  background-image: url(https://github.com/matsumotojunki/sample/blob/main/header_img.jpeg?raw=true);
-  height: 400px;
+  background-image: url(/img/top.JPG);
+  height: 330px;
   width: 100%;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -149,15 +190,16 @@ body {
 
 .mainvis .mainvis_img h2 {
   position: absolute;
-  bottom: 30px;
-  right: 0;
+  bottom: 130px;
+  width: 100%;
   background-color: white;
   height: 40px;
   font-size: 20px;
   font-weight: 500;
   line-height: 40px;
-  opacity: 0.8;
   text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 600;
 }
 
 /*--header ここまで*/
@@ -173,28 +215,27 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 .menu-top ul li {
   list-style: none;
-  width: 40%;
+  width: 27%;
   height: 17px;
   line-height: 20px;
   background-color: #c2a79c;
   color: #fff;
-  margin: 10px auto;
+  margin: 3px auto;
   padding: 12px 10px;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
-          box-shadow: 2px 2px rgba(92, 91, 91, 0.6);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .menu-top ul li a {
   text-decoration: none;
   display: block;
   color: #fff;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .menu-top ul .menu1 a::before {
@@ -375,8 +416,9 @@ body {
 /*ハンバーガーメニューここまで*/
 /*--menuここまで--*/
 /*--topここから--*/
-.top {
-  margin-top: 60px;
+#top {
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .top_img img {
@@ -423,42 +465,33 @@ body {
 
 /*--topここまで--*/
 /*--contentここから--*/
-.main_index {
-  text-align: center;
+.content_inner {
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
-.main_index h4 {
-  padding: 15px 0;
-  position: relative;
-  margin: 20px auto;
-  font-weight: 300;
-  font-size: 23px;
-  border-bottom: 2px solid #696C75;
-  margin-top: 80px;
-  color: #000;
+.content {
+  background-color: rgba(207, 180, 156, 0.4);
+  padding: 5px;
+  margin-top: 30px;
 }
 
-.main_index h4::before {
-  position: absolute;
-  content: '';
-  width: 30%;
-  left: 0;
-  bottom: -2px;
-  border-bottom: 2px solid #c2a79c;
-}
-
-.content_v {
-  margin-bottom: 20px;
+.content .content_v {
   background-color: #F7F7F7;
   padding: 1% 5%;
   border-radius: 3px;
+  width: 92%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.content_v img {
+.content .content_v img {
   width: 100%;
 }
 
-.content_v .index {
+.content .content_v .index {
   text-align: center;
   margin: 5px 0;
   border-radius: 5px;
@@ -468,8 +501,9 @@ body {
   font-weight: 700;
 }
 
-.content_v p {
+.content .content_v p {
   line-height: 2.0;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 16px;
 }
@@ -478,6 +512,11 @@ body {
 /*--施術事例ここから--*/
 /*--施術事例ここまで--*/
 /*--お客様の声ここから--*/
+#cust_voice {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
 .voice {
   margin-top: 50px;
 }
@@ -496,27 +535,39 @@ body {
 }
 
 .voice_button {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 30px;
   text-align: center;
 }
 
-.voice_button::before {
+.voice_button a {
+  color: royalblue;
+  text-decoration: none;
+  border-bottom: solid 1px royalblue;
+}
+
+.voice_button a::before {
   font-family: "Font Awesome 5 Free";
   content: '\f138';
   font-weight: 900;
+  margin-right: 5px;
 }
 
-.voice_button a {
-  text-decoration: none;
-  color: #000;
+.voice_page {
+  margin-top: 100px;
 }
 
 /*--お客様の声ここまで--*/
 /*--施術方法ここから--*/
+#method {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
 .method p {
   line-height: 2.0;
   margin-bottom: 15px;
+  margin-top: 10px;
   font-size: 16px;
 }
 
@@ -566,12 +617,84 @@ body {
 }
 
 /*--施術方法ここまで--*/
+/*--blogここから--*/
+.blog_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog_list_box {
+  width: 48%;
+  border: solid 1px #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blog_list_box img {
+  width: 100%;
+}
+
+.blog_list_box .blog_title {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.blog_list_box .read {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.blog_list .readmore {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.blog_list .readmore a {
+  color: royalblue;
+  text-decoration: none;
+  border-bottom: solid 1px royalblue;
+}
+
+.blog_list .readmore a::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f138';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/*--blogここまで--*/
 /*--menuここから--*/
+#menu {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.menu_inner {
+  background-color: rgba(207, 180, 156, 0.4);
+  padding: 1px 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .menu_box {
+  width: 92%;
+  margin: 0 auto;
   margin-bottom: 20px;
   background-color: #F7F7F7;
   padding: 5%;
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu_box_img img {
@@ -639,7 +762,6 @@ body {
   width: 65%;
   text-align: center;
   font-size: 16px;
-  background-color: rgba(207, 180, 156, 0.4);
   border-bottom: solid 1px #ccc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -657,6 +779,11 @@ body {
 
 /*--menuここまで--*/
 /*--予約ここから--*/
+#yoyaku {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
 .yoyaku_text {
   margin-bottom: 40px;
   text-align: center;
@@ -673,13 +800,53 @@ body {
   font-size: 16px;
 }
 
-.yoyaku_box .button {
+.yoyaku_box .button_tel {
   text-align: center;
   border: solid 1px #c2a79c;
   width: 70%;
+  height: 40px;
+  line-height: 40px;
   margin: 0 auto;
   margin-top: 10px;
-  padding: 10px 0;
+}
+
+.yoyaku_box .button_tel a {
+  text-decoration: none;
+  display: block;
+  color: #696C75;
+}
+
+.yoyaku_box .button_tel a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f095";
+  font-weight: 600;
+  margin-right: 5px;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.yoyaku_box .button_line {
+  text-align: center;
+  border: solid 1px #c2a79c;
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.yoyaku_box .button_line a {
+  text-decoration: none;
+  display: block;
+  color: #696C75;
+}
+
+.yoyaku_box .button_line a::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f3c0";
+  font-weight: 200;
+  margin-right: 5px;
 }
 
 /*--予約ここまで--*/
@@ -712,17 +879,6 @@ body {
   width: 50%;
   padding: 10px 0;
   padding-left: 30px;
-}
-
-.acces_box .address_button {
-  text-align: center;
-  background-color: rgba(207, 180, 156, 0.4);
-  border: solid 1px #ccc;
-  width: 60%;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
 .acces_box .map iframe {
@@ -870,7 +1026,13 @@ body {
   border-radius: 5px;
 }
 
-.under_fix .reserve_box::before {
+.under_fix .reserve_box a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.under_fix .reserve_box a::before {
   font-family: "Font Awesome 5 Free";
   content: "\f073";
   font-weight: 200;
@@ -934,7 +1096,12 @@ body {
   font-size: 16px;
 }
 
-.footer_menu ul li::before {
+.footer_menu ul li a {
+  text-decoration: none;
+  color: #696C75;
+}
+
+.footer_menu ul li a::before {
   font-family: "Font Awesome 5 Free";
   content: '\f138';
   font-weight: 900;
@@ -1223,5 +1390,50 @@ body {
 .recruit_contact ul li {
   margin-left: 30px;
   line-height: 1.5;
+}
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.style-list {
+  margin-top: 90px;
+  /*ギャラリー内のイメージは横幅100%にする*/
+  /*　横幅900px以下の段組み設定　*/
+}
+
+.style-list .gallery {
+  -webkit-columns: 5;
+          columns: 5;
+  /*段組みの数*/
+  padding: 0 15px;
+  /*ギャラリー左右に余白をつける*/
+  margin: 0 auto;
+}
+
+.style-list .gallery li {
+  margin-bottom: 20px;
+  /*各画像下に余白をつける*/
+  list-style: none;
+}
+
+.style-list .gallery img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  /*画像の下にできる余白を削除*/
+}
+
+@media only screen and (max-width: 900px) {
+  .style-list .gallery {
+    -webkit-columns: 4;
+            columns: 4;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .style-list .gallery {
+    -webkit-columns: 3;
+            columns: 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */
