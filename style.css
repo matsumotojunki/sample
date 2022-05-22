@@ -115,6 +115,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 900px) {
+  .inner {
+    width: 80%;
+  }
+}
+
 /*--見出し--*/
 .main_index {
   text-align: center;
@@ -173,12 +179,17 @@ body {
   width: auto;
 }
 
+@media screen and (min-width: 900px) {
+  .header_logo img {
+    height: 80px;
+  }
+}
+
 .mainvis {
   margin-top: 70px;
 }
 
 .mainvis .mainvis_img {
-  background-color: white;
   background-image: url(https://github.com/matsumotojunki/sample/blob/main/main_img.JPG?raw=true);
   height: 350px;
   width: 100%;
@@ -186,6 +197,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .mainvis .mainvis_img {
+    background-size: cover;
+    height: 380px;
+  }
 }
 
 .mainvis .mainvis_img h2 {
@@ -218,6 +236,13 @@ body {
   margin: 10px 0;
 }
 
+@media screen and (min-width: 900px) {
+  .menu-top ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .menu-top ul li {
   list-style: none;
   width: 27%;
@@ -229,6 +254,12 @@ body {
   padding: 12px 10px;
   border-radius: 5px;
   font-size: 13px;
+}
+
+@media screen and (min-width: 900px) {
+  .menu-top ul li {
+    margin: 0 3px;
+  }
 }
 
 .menu-top ul li a {
@@ -368,6 +399,12 @@ body {
   height: 50px;
 }
 
+@media screen and (min-width: 900px) {
+  .openbtn {
+    display: none;
+  }
+}
+
 /*×に変化*/
 .openbtn span {
   display: inline-block;
@@ -421,12 +458,41 @@ body {
   margin-top: -60px;
 }
 
+@media screen and (min-width: 900px) {
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .top_img {
+    width: 35%;
+  }
+}
+
 .top_img img {
   width: 100%;
 }
 
 .top_text {
   line-height: 2.0;
+}
+
+@media screen and (min-width: 900px) {
+  .top_text {
+    width: 60%;
+  }
 }
 
 .top_text h3 {
@@ -508,9 +574,24 @@ body {
   font-size: 16px;
 }
 
+/*--pc表示の時だけcontent_box使用--*/
+@media screen and (min-width: 900px) {
+  .content_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content_box .content_v {
+    width: 31%;
+    padding: 2%;
+  }
+}
+
 /*--contentここまで--*/
-/*--施術事例ここから--*/
-/*--施術事例ここまで--*/
 /*--お客様の声ここから--*/
 #cust_voice {
   padding-top: 60px;
@@ -519,6 +600,13 @@ body {
 
 .voice {
   margin-top: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  .voice {
+    width: 45%;
+    margin: 0 10px;
+  }
 }
 
 .voice img {
@@ -557,6 +645,20 @@ body {
   margin-top: 100px;
 }
 
+@media screen and (min-width: 900px) {
+  .cust_voice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /*--お客様の声ここまで--*/
 /*--施術方法ここから--*/
 #method {
@@ -581,11 +683,33 @@ body {
   font-size: 16px;
 }
 
+@media screen and (min-width: 900px) {
+  .method_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .method_main_text {
   margin-bottom: 20px;
   background-color: #F7F7F7;
   padding: 1% 5%;
   border-radius: 3px;
+}
+
+@media screen and (min-width: 900px) {
+  .method_main_text {
+    width: 26%;
+    margin: 10px 10px;
+    padding: 2%;
+  }
 }
 
 .method_main_text .method_1,
@@ -629,12 +753,27 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 900px) {
+  .blog_list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 .blog_list_box {
-  width: 48%;
+  width: 45%;
   border: solid 1px #ccc;
-  padding: 10px;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+  .blog_list_box {
+    width: 30%;
+    margin-right: 20px;
+  }
 }
 
 .blog_list_box img {
@@ -652,20 +791,20 @@ body {
   font-size: 13px;
 }
 
-.blog_list .readmore {
+.readmore {
   font-size: 16px;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
 }
 
-.blog_list .readmore a {
+.readmore a {
   color: royalblue;
   text-decoration: none;
   border-bottom: solid 1px royalblue;
 }
 
-.blog_list .readmore a::before {
+.readmore a::before {
   font-family: "Font Awesome 5 Free";
   content: '\f138';
   font-weight: 900;
@@ -697,9 +836,44 @@ body {
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 900px) {
+  .menu_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu_box:nth-child(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu_box_img {
+    width: 47%;
+  }
+}
+
 .menu_box_img img {
   width: 100%;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .menu_box_text {
+    width: 50%;
+  }
+  .menu_box_text :nth-child(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .menu_box_text .menu_list {
@@ -851,8 +1025,32 @@ body {
 
 /*--予約ここまで--*/
 /*--accesここから--*/
+@media screen and (min-width: 900px) {
+  .acces {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
 .acces img {
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .acces img {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .acces_box {
+    width: 48%;
+  }
 }
 
 .acces_box .address {
@@ -918,6 +1116,12 @@ body {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 900px) {
+  .title {
+    padding: 1% 20px 2% 2%;
+  }
+}
+
 /*アイコンの＋と×*/
 .title::after {
   font-family: "Font Awesome 5 Free";
@@ -956,6 +1160,12 @@ body {
   line-height: 2.0;
   border-radius: 5px;
   position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .box {
+    padding: 1%;
+  }
 }
 
 .box p {
@@ -1043,7 +1253,6 @@ body {
 /*--footerここから--*/
 .footer {
   background-color: rgba(207, 180, 156, 0.4);
-  width: 100vw;
   font-size: 16px;
   margin-top: 50px;
   padding: 20px 0;
@@ -1053,6 +1262,20 @@ body {
 .footer_box {
   width: 92%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  .footer_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer_main {
+    width: 60%;
+  }
 }
 
 .footer_main p {
@@ -1081,6 +1304,12 @@ body {
   width: 60%;
   padding: 10px 0;
   padding-left: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer_menu {
+    width: 50%;
+  }
 }
 
 .footer_menu ul {
@@ -1239,8 +1468,7 @@ body {
 }
 
 .recruit-main_text {
-  background-color: #c2a79c;
-  color: #fff;
+  background-color: rgba(207, 180, 156, 0.4);
   padding: 15px;
   border-radius: 5px;
   display: -webkit-box;
@@ -1350,10 +1578,9 @@ body {
 }
 
 .recruiting_list {
-  background-color: #c2a79c;
+  background-color: rgba(207, 180, 156, 0.4);
   padding: 10px;
   border-radius: 5px;
-  color: #fff;
   margin-bottom: 20px;
 }
 
